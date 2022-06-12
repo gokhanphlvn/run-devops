@@ -1,0 +1,24 @@
+https://github.com/aspnetrun/run-devops
+
+ kubectl get all
+ kubectl get service
+ kubectl apply -f nginx-depl.yaml
+ kubectl apply -f nginx-service.yaml
+ kubectl describe service nginx-service
+ kubectl get pod -o wide --
+
+
+--Dashboard
+https://github.com/kubernetes/dashboard
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.0/aio/deploy/recommended.yaml
+ kubectl describe secret -n kube-system
+ kubectl proxy
+
+ kubectl delete -f .\nginx-depl.yaml
+ kubectl delete -f .\nginx-service.yaml
+ 
+ kubectl apply -f .\mongo-secret.yaml
+ kubectl get secret
+ 
+ kubectl describe service mongo-service
+ kubectl get pod mongo-deployment-9c5b4dddb-f5mvl -o wide 

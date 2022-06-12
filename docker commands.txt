@@ -1,0 +1,3 @@
+docker exec -it shopping-mongo /bin/bash
+kubectl get all
+kubectl port-forward swn-nginx 7070:80
